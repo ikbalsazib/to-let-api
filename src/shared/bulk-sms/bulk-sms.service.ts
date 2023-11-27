@@ -17,19 +17,20 @@ export class BulkSmsService {
    */
   public sentSingleSms(phoneNo: string, message: string) {
     const username = this.configService.get<string>('smsSenderUsername');
+    const password = this.configService.get<string>('smsSenderPassword');
     const smsSenderSecret = this.configService.get<string>('smsSenderSecret');
     const senderId = this.configService.get<string>('smsSenderId');
 
-    // const url =
-    //   'http://66.45.237.70/api.php?username=' +
-    //   username +
-    //   '&password=' +
-    //   password +
-    //   '&number=' +
-    //   phoneNo +
-    //   '&message=' +
-    //   message;
-    const url = `http://bulksmsbd.net/api/smsapi?api_key=${smsSenderSecret}&type=text&number=${phoneNo}&senderid=${senderId}&message=${message}`;
+    const url =
+      'http://66.45.237.70/api.php?username=' +
+      username +
+      '&password=' +
+      password +
+      '&number=' +
+      phoneNo +
+      '&message=' +
+      message;
+    // const url = `http://bulksmsbd.net/api/smsapi?api_key=${smsSenderSecret}&type=text&number=${phoneNo}&senderid=${senderId}&message=${message}`;
 
     console.log('url', url);
 

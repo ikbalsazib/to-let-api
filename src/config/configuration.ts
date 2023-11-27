@@ -24,11 +24,9 @@ export default () => ({
   // smsSenderUsername: '01781310241',
   // smsSenderPassword: 'YV6H7B8N',
   // smsSenderId: 'Anisul',
-
-  smsSenderSecret: 'LSidg2jki2unBdWIVoLC',
-  smsSenderUsername: 'medicinedipo',
-  smsSenderPassword: '9E69ZJBQ',
-  smsSenderId: '8809617613067',
+  smsSenderUsername: '01781310241',
+  smsSenderPassword: 'YV6H7B8N',
+  smsSenderId: 'Anisul',
 
   dbAdminUsername: 'ikbalsazib11',
   dbAdminPassword: 'IKBALsazib11',
